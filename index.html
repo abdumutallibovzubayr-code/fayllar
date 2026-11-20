@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta IT School | Kelajak kasblari akademiyasi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        metaBlue: '#0f172a',
+                        metaAccent: '#38bdf8',
+                        metaNeon: '#22c55e',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-['Inter'] antialiased">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-black tracking-wider text-white flex items-center gap-2">
+                META <span class="text-metaAccent">IT SCHOOL</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="#courses" class="hover:text-metaAccent transition">Kurslar</a>
+                <a href="#about" class="hover:text-metaAccent transition">Biz haqimizda</a>
+                <a href="#register" class="hover:text-metaAccent transition">Ro'yxatdan o'tish</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#register" class="bg-metaAccent text-slate-950 font-bold px-6 py-2.5 rounded-full hover:bg-sky-400 transition shadow-lg shadow-sky-500/20">Kursga yozilish</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-2xl text-white">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-4">
+            <a href="#courses" class="block text-slate-300 hover:text-metaAccent">Kurslar</a>
+            <a href="#about" class="block text-slate-300 hover:text-metaAccent">Biz haqimizda</a>
+            <a href="#register" class="block text-slate-300 hover:text-metaAccent">Ro'yxatdan o'tish</a>
+            <a href="#register" class="block text-center bg-metaAccent text-slate-950 font-bold py-2 rounded-full">Kursga yozilish</a>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#0284c7_0,transparent_50%)] opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="bg-slate-900 text-metaAccent border border-slate-800 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest inline-block mb-6">Kelajak shu yerda boshlanadi</span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                Meta IT School bilan <span class="text-transparent bg-clip-text bg-gradient-to-r from-metaAccent to-metaNeon">kelajak kasbini</span> egallang!
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-8 sm:mx-auto">
+                Zamonaviy IT yo'nalishlari va professional ingliz tili kurslari orqali o'z karyerangizni noldan boshlang.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#courses" class="bg-metaAccent text-slate-950 font-bold px-8 py-4 rounded-full hover:bg-sky-400 transition shadow-xl shadow-sky-500/20">Kurslarni ko'rish</a>
+                <a href="#register" class="border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-full transition">Hoziroq yozilish</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Bizning yo'nalishlar</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Sizga mos keladigan eng zamonaviy kasb va tillarni professional darajada o'rganing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Ingliz tili -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-metaAccent font-bold text-xl mb-6 group-hover:bg-metaAccent group-hover:text-slate-950 transition">🇺🇸</div>
+                        <span class="text-xs font-semibold text-metaAccent uppercase tracking-widest">Til kursi</span>
+                        <h3 class="text-2xl font-bold mt-1 mb-3">Ingliz tili (English)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Suhbatlashish, grammatika va xalqaro imtihonlarga (IELTS/CEFR) tayyorlov kurslari.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6 pt-4 border-t border-slate-800">
+                            <span class="text-xs text-slate-500">Oylik to'lov:</span>
+                            <span class="text-xl font-black text-metaNeon">300 000 so'm</span>
+                        </div>
+                        <a href="#register" class="block text-center bg-slate-800 hover:bg-metaAccent hover:text-slate-950 font-bold py-3 rounded-2xl transition text-sm">Kursga yozilish</a>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-metaAccent font-bold text-xl mb-6 group-hover:bg-metaAccent group-hover:text-slate-950 transition">💻</div>
+                        <span class="text-xs font-semibold text-metaAccent uppercase tracking-widest">IT Dasturlash</span>
+                        <h3 class="text-2xl font-bold mt-1 mb-3">Frontend Dasturlash</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">HTML, CSS, JavaScript, React yordamida zamonaviy va interaktiv veb-saytlar yaratishni o'rganing.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6 pt-4 border-t border-slate-800">
+                            <span class="text-xs text-slate-500">Format:</span>
+                            <span class="text-sm font-bold text-slate-200">Amaliy darslar</span>
+                        </div>
+                        <a href="#register" class="block text-center bg-slate-800 hover:bg-metaAccent hover:text-slate-950 font-bold py-3 rounded-2xl transition text-sm">Kursga yozilish</a>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-metaAccent font-bold text-xl mb-6 group-hover:bg-metaAccent group-hover:text-slate-950 transition">⚙️</div>
+                        <span class="text-xs font-semibold text-metaAccent uppercase tracking-widest">IT Dasturlash</span>
+                        <h3 class="text-2xl font-bold mt-1 mb-3">Backend Dasturlash</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Node.js / Python, Ma'lumotlar bazasi va serverlar bilan ishlash orqali kuchli dasturiy ta'minot yarating.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6 pt-4 border-t border-slate-800">
+                            <span class="text-xs text-slate-500">Format:</span>
+                            <span class="text-sm font-bold text-slate-200">Professional daraja</span>
+                        </div>
+                        <a href="#register" class="block text-center bg-slate-800 hover:bg-metaAccent hover:text-slate-950 font-bold py-3 rounded-2xl transition text-sm">Kursga yozilish</a>
+                    </div>
+                </div>
+
+                <!-- SMM -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-metaAccent font-bold text-xl mb-6 group-hover:bg-metaAccent group-hover:text-slate-950 transition">📱</div>
+                        <span class="text-xs font-semibold text-metaAccent uppercase tracking-widest">Marketing</span>
+                        <h3 class="text-2xl font-bold mt-1 mb-3">SMM (Social Media Marketing)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Target, Copywriting, brendni rivojlantirish va ijtimoiy tarmoqlarda professional strategiya tuzish.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6 pt-4 border-t border-slate-800">
+                            <span class="text-xs text-slate-500">Format:</span>
+                            <span class="text-sm font-bold text-slate-200">100% amaliyot</span>
+                        </div>
+                        <a href="#register" class="block text-center bg-slate-800 hover:bg-metaAccent hover:text-slate-950 font-bold py-3 rounded-2xl transition text-sm">Kursga yozilish</a>
+                    </div>
+                </div>
+
+                <!-- Sun'iy Intellekt -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition group md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-metaAccent font-bold text-xl mb-6 group-hover:bg-metaAccent group-hover:text-slate-950 transition">✨</div>
+                        <span class="text-xs font-semibold text-metaAccent uppercase tracking-widest">Kelajak texnologiyasi</span>
+                        <h3 class="text-2xl font-bold mt-1 mb-3">Sun'iy Intellekt (AI)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Neyrotarmoqlar bilan ishlash, Prompt Engineering va sun'iy intellekt vositalarini o'z ishida qo'llash.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6 pt-4 border-t border-slate-800">
+                            <span class="text-xs text-slate-500">Format:</span>
+                            <span class="text-sm font-bold text-slate-200">Eksklyuziv kurs</span>
+                        </div>
+                        <a href="#register" class="block text-center bg-slate-800 hover:bg-metaAccent hover:text-slate-950 font-bold py-3 rounded-2xl transition text-sm">Kursga yozilish</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Nima uchun aynan Meta IT School?</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Biz talabalarga faqat nazariya emas, balki real ish beruvchilar talab qiladigan ko'nikmalarni beramiz.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-3xl">
+                    <span class="text-3xl mb-4 block">👨‍🏫</span>
+                    <h3 class="text-xl font-bold mb-2">Tajribali ustozlar</h3>
+                    <p class="text-slate-400 text-sm">O'z sohasida ko'p yillik tajribaga ega bo'lgan malakali mutaxassislar.</p>
+                </div>
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-3xl">
+                    <span class="text-3xl mb-4 block">🛠️</span>
+                    <h3 class="text-xl font-bold mb-2">Amaliy darslar</h3>
+                    <p class="text-slate-400 text-sm">Darslarning 80% qismi real loyihalar va amaliyot ustida qurilgan.</p>
+                </div>
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-3xl">
+                    <span class="text-3xl mb-4 block">📜</span>
+                    <h3 class="text-xl font-bold mb-2">Rasmiy sertifikat</h3>
+                    <p class="text-slate-400 text-sm">Kursni muvaffaqiyatli tamomlaganlarga maxsus sertifikat beriladi.</p>
+                </div>
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-3xl">
+                    <span class="text-3xl mb-4 block">🚀</span>
+                    <h3 class="text-xl font-bold mb-2">Ishga ko'maklashish</h3>
+                    <p class="text-slate-400 text-sm">Eng yaxshi bitiruvchilarga yetakchi kompaniyalardan ish topishda yordam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTER FORM SECTION -->
+    <section id="register" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-extrabold mb-2">Hoziroq ro'yxatdan o'ting</h2>
+                    <p class="text-slate-400 text-sm">Ma'lumotlaringizni qoldiring, operatorlarimiz tez orada siz bilan bog'lanishadi.</p>
+                </div>
+
+                <form id="lead-form" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Ismingiz</label>
+                        <input type="text" id="name" required placeholder="Masalan: Anvar Toshmatov" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-4 py-3.5 text-white outline-none focus:border-metaAccent transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Telefon raqamingiz</label>
+                        <input type="tel" id="phone" required placeholder="+998 90 123 45 67" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-4 py-3.5 text-white outline-none focus:border-metaAccent transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Yo'nalishni tanlang</label>
+                        <select id="course" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-4 py-3.5 text-white outline-none focus:border-metaAccent transition">
+                            <option value="Ingliz tili">Ingliz tili (300 000 so'm / oy)</option>
+                            <option value="Frontend">Frontend Dasturlash</option>
+                            <option value="Backend">Backend Dasturlash</option>
+                            <option value="SMM">SMM (Social Media Marketing)</option>
+                            <option value="AI">Sun'iy Intellekt (AI)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-metaAccent text-slate-950 font-bold py-4 rounded-2xl hover:bg-sky-400 transition shadow-lg shadow-sky-500/20">Ariza yuborish</button>
+                </form>
+
+                <div id="success-message" class="hidden mt-6 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 p-4 rounded-2xl text-center font-medium">
+                    Rahmat! Arizangiz muvaffaqiyatli qabul qilindi. Tez orada siz bilan bog'lanamiz.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-sm text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Meta IT School</h3>
+                <p class="text-slate-500">Zamonaviy kasblar va tillarni o'rganish markazi.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Bog'lanish</h3>
+                <p class="text-slate-500 mb-2">📞 Telefon: +998 (99) 123-45-67</p>
+                <p class="text-slate-500">📍 Manzil: Toshkent shahar, IT Park</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Ijtimoiy tarmoqlar</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-metaAccent transition">Instagram</a>
+                    <a href="#" class="hover:text-metaAccent transition">Telegram</a>
+                    <a href="#" class="hover:text-metaAccent transition">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center border-t border-slate-900 pt-8 text-xs text-slate-600">
+            <p>Copyright © 2026 Meta IT School. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript faylini ulash -->
+    <script src="index.js"></script>
+</body>
+</html>
